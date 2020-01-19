@@ -1,6 +1,20 @@
+h4 i
+{
+	font-size: 40px;
+}
 .color_theme
 {
 	color: rgb(255,193,7);
+}
+.bandeau_gauche
+{
+	background-color: rgb(255,193,7);
+	padding: 0px;
+}
+.bandeau_gauche p
+{
+	margin-left: 10%;
+	margin-right: 10%;
 }
 .underline
 {
@@ -34,6 +48,7 @@
 }
 h3
 {
-	background-color: rgb(33,33,33);
+	background-color: rgb(66,66,66);
 	color: rgb(255,193,7);
+	text-align: center;
 }
