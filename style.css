@@ -10,6 +10,9 @@ h4 i
 {
 	background-color: rgb(255,193,7);
 	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .bandeau_gauche p
 {
@@ -51,4 +54,16 @@ h3
 	background-color: rgb(66,66,66);
 	color: rgb(255,193,7);
 	text-align: center;
+}
+#loisirs
+{
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#loisirs i
+{
+	font-size: 60px;
 }
