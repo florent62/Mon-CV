@@ -1,12 +1,16 @@
-h4 i
+.petit_point /*Petit point avant la date des expériences/formation ect*/
 {
-	font-size: 40px;
+	font-size: 10px;
 }
-.color_theme
+h4 i /* Style des icone de fontawesome */
+{
+	font-size: 30px;
+}
+.color_theme /* Couleur principale du CV*/
 {
 	color: rgb(255,193,7);
 }
-.bandeau_gauche
+.bandeau_gauche /* Structure du bandeau gauche*/
 {
 	background-color: rgb(255,193,7);
 	padding: 0px;
@@ -14,7 +18,7 @@ h4 i
 	flex-direction: column;
 	justify-content: space-between;
 }
-.bandeau_gauche p
+.bandeau_gauche p /* Paragraphe dans le bandeau gauche*/
 {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -55,15 +59,16 @@ h3
 	color: rgb(255,193,7);
 	text-align: center;
 }
-#loisirs
+#loisirs /* Div qui contient les icones loisirs*/
 {
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin-bottom: 30px; margin-top: 30px;
+	margin-left: 40px;margin-right: 40px;
+	
 }
-#loisirs i
+#loisirs img /* Icones loisirs*/
 {
-	font-size: 60px;
+	width: 25%;
 }
