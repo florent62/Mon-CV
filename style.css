@@ -38,16 +38,19 @@ h4 i /* Style des icone de fontawesome */
 .block_contenu
 {
 	display: flex;
-	justify-content: space-around;
-	margin-top: 20px;
-	padding-top: 20px;
+	margin-top: 5px;
+	padding-top: 5px;
 }
 .dates
 {
 	width: 25%;
 	display: flex;
-	justify-content: space-around;
-	margin-right: 20px;
+	margin-right: 60px;
+}
+.dates i
+{
+	margin-top: 10%;
+	margin-right: 10px;
 }
 .block_main
 {
@@ -70,4 +73,13 @@ h3
 #loisirs img /* Icones loisirs*/
 {
 	width: 25%;
+}
+.contenu_rec
+{
+	background-color: red;
+}
+.block_rec
+{
+	display: flex;
+	justify-content: space-around;
 }
