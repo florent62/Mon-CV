@@ -13,8 +13,8 @@
 <body>
 	<div class="container_fluid" >
 		<div class="row" style="border: solid 1px grey;">
-			<div id="block1" class="col-xs-3 col-md-4 col-lg-4 bandeau_gauche"><!-- Bloc de gauche du CV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-				<div>
+			<div id="block1" class="col-xs-3 col-md-4 col-lg-4"><!-- Bloc de gauche du CV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+				<header>
 					<img src="photo.jpg" alt="Ma photo" class="img-fluid rounded-circle img-responsive" style="width: 60%; margin-left: 20%; margin-top: 50px ; margin-bottom: 50px ; border: solid 4px rgb(218,175,18); ">
 					<h3>Contact</h3>
 					<p style="font-weight: bold;font-size: 13px;">
@@ -34,24 +34,24 @@
 					<h3>à propos de moi</h3>
 					<p>Je suis étudiant en développement web et très passionné par ce domaine ainsi que par l'informatique.
 					J'ai également une passion pour l'univers geek et la culture japonnaise. J'ai pour projet de devenir développeur web et de relevé de nouveaux challenges pour appronfondir mon expérience et mes connaissances.</p>
-				</div>
-				<div>
+				</header>
+				<footer>
 					<h3>Loisirs</h3>
 					<div id="loisirs">
 						<img alt="Jeux Vidéo" src="icon/joystick.png">
 						<img alt="Informatique" src="icon/pc.png">
 						<img alt="Culture Japonnaise" src="icon/japan.png">
 					</div>	
-				</div>
+				</footer>
 			</div>
 			
 			<div id="block2" class="col-xs-9 col-md-8 col-lg-8"> <!-- Bloc principal du CV (droite)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
-				<div id="container_main">
+				<main>
 					<h1 class="titre1"><span class="color_theme">FLORENT</span> NOEL</h1>
 					<h6 style="color: rgb(66,66,66); font-size: 35px;"><span class="underline">Dével</span>oppeur web</h6>
 					<h2 style="margin-top: 100px;"><i class="fas fa-graduation-cap color_theme"></i> Formation</h2>
-					<div class="block_main">
-						<div class="block_contenu">
+					<article>
+						<section>
 								<div class="dates">
 									<i class="far fa-dot-circle color_theme "></i>
 										2019<br>
@@ -62,8 +62,8 @@
 									<h5>Systèmes Numérique</h5>
 									<p>Lycée Saint Joseph</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										2017<br>
@@ -74,12 +74,12 @@
 									<h5>Systèmes Electronique et Numérique</h5>
 									<p>Lycée E.Branly</p>
 								</div>
-						</div>
+						</section>
 						
-					</div>
+					</article>
 					<h2><i class="fas fa-briefcase color_theme"></i> Expérience professionelle</h2>
-					<div class="block_main">
-						<div class="block_contenu">
+					<article>
+						<section>
 								<div class="dates">
 									<i class="far fa-dot-circle color_theme "></i>
 										Septembre 2019<br>
@@ -90,8 +90,8 @@
 									<h5>Préparateur de commandes</h5>
 									<p>Préparation de commande au drive</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Aout 2019<br>
@@ -102,8 +102,8 @@
 									<h5>Inventoriste</h5>
 									<p>Inventaire des articles en rayon Gémos</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Juin 2019<br>
@@ -114,8 +114,8 @@
 									<h5>Inventoriste</h5>
 									<p>Inventaire des articles en rayon Gifi et Tati</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Mai-Juin 2018<br>
@@ -126,8 +126,8 @@
 									<h5>Développeur Web</h5>
 									<p>Stage en tant que développeur web</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Janvier 2017<br>
@@ -138,8 +138,8 @@
 									<h5>Informaticien</h5>
 									<p>Stage de dépannage informatique</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Octobre 2016<br>
@@ -150,8 +150,8 @@
 									<h5>Informaticien</h5>
 									<p>Stage de dépannage informatique</p>
 								</div>
-						</div>
-						<div class="block_contenu">
+						</section>
+						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
 										Décembre 2015<br>
@@ -162,11 +162,11 @@
 									<h5>Développeur Web</h5>
 									<p>Stage et découverte du HTML et CSS</p>
 								</div>
-						</div>
-					</div>
+						</section>
+					</article>
 					<h2><i class="fas fa-pencil-alt color_theme"></i> Recommandations</h2>
-					<div class="block_main">
-						<div class="block_rec"><!--Bloc recommandations-->
+					<article>
+						<section><!--Bloc recommandations-->
 							<div class="contenu_rec" style="margin-right: 25%;">
 									<h6>MAXIME KIEMAN</h6>
 									<p><strong>Directeur, Mon Agence</strong> <br>
@@ -181,10 +181,9 @@
 										Email : name@email.com
 									</p>
 							</div>
-						</div>
-						</div>
-					</div>
-				</div>
+						</section>
+					</article>
+				</main>
 			</div>
 		</div>
 	</div>
