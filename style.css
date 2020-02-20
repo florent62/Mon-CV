@@ -1,7 +1,31 @@
+
+html
+{
+	border: solid 1px green;
+
+}
 .petit_point /*Petit point avant la date des expériences/formation ect*/
 {
 	font-size: 10px;
 }
+
+#photo
+{
+	 width: 60%; 
+	 margin-left: 19%; 
+	 margin-top: 50px; 
+	 margin-bottom: 50px; 
+	 border: solid 4px rgb(218,175,18);
+}
+#titre-block-xs
+{
+	display: none;
+}
+#footerXS
+{
+	display: none;
+}
+
 h2 i /* Style des icone de fontawesome */
 {
 	font-size: 30px;
@@ -52,11 +76,22 @@ h6
 {
 	border-bottom: solid 2px rgb(255,193,7);
 }
+#titre-block-lg
+{
+	padding-bottom: 60px;
+}
 
-.titre1
+#nom-lg
 {
 	font-size: 55px;
 }
+
+#job-lg
+{
+	color: rgb(66,66,66); 
+	font-size: 35px;
+}
+
 section
 {
 	display: flex;
@@ -69,8 +104,7 @@ article
 }
 .dates
 {
-	width: 35%;
-	display: flex;
+	width: 40%;
 	margin-right: 60px;
 }
 .dates i
@@ -103,3 +137,161 @@ strong
 {
 	font-size: 
 }
+/*Style pour les plus petit écran ----------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) 
+{
+	#footerLG/*Footer pour écran petit écrans */ 
+	{
+		display: none;
+	}
+	#titre-block-lg
+	{
+		display: none;
+	}
+	#titre-block-xs
+	{
+		display: block;
+		margin-left: 25px;
+		text-align: right;
+	}
+	#footerXS/*Footer pour écran petit écrans */ 
+	{
+		display: block;
+		background-color:rgb(255,193,7);
+		width: 100%;
+	}
+
+	#photo
+	{
+		margin-top: 20px; 
+		margin-bottom: 20px; 
+	}
+	main
+	{
+		padding: 0px;
+		padding-top: 15px;
+		border-top: solid 1px rgb(218,175,18);
+	}
+
+	h2
+	{
+		font-size: 20px;
+	}
+	h2 i /* Style des icone de fontawesome */
+	{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	h4
+	{
+		font-size: 18px;
+	}
+
+	h5
+	{
+		font-size: 15px;
+	}
+	section
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 8px;
+		padding-top: 8px;
+	}
+
+	.dates
+	{
+		width: 90%;
+		margin-right: 0px;
+		margin-bottom: 8px;
+	}
+	.dates i
+	{
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+	#section-recommandations
+	{
+		margin-left: 20%;
+	}
+}
+/*Style pour les écrans type tablette ----------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 991px) 
+{
+	#footerLG/*Footer pour écran petit écrans */ 
+	{
+		display: none;
+	}
+	#titre-block-lg
+	{
+		display: none;
+	}
+	#titre-block-xs
+	{
+		display: block;
+		margin-left: 25px;
+		text-align: right;
+	}
+	#footerXS/*Footer pour écran petit écrans */ 
+	{
+		display: block;
+		background-color:rgb(255,193,7);
+		width: 100%;
+	}
+
+	#photo
+	{
+		margin-top: 20px; 
+		margin-bottom: 20px; 
+	}
+	main
+	{
+		padding: 0px;
+		padding-top: 15px;
+		border-top: solid 1px rgb(218,175,18);
+	}
+
+	h2
+	{
+		font-size: 20px;
+	}
+	h2 i /* Style des icone de fontawesome */
+	{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	h4
+	{
+		font-size: 18px;
+	}
+
+	h5
+	{
+		font-size: 15px;
+	}
+	section
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 8px;
+		padding-top: 8px;
+	}
+
+	.dates
+	{
+		width: 90%;
+		margin-right: 0px;
+		margin-bottom: 8px;
+	}
+	.dates i
+	{
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+	#section-recommandations
+	{
+		margin-left: 20%;
+	}
+}
+
+/* Changer strong*/

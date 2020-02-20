@@ -8,14 +8,18 @@
 	<script src="https://kit.fontawesome.com/c07d48b88e.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Mon CV</title>
+	<title>CV - Florent NOEL</title>
 </head>
 <body>
 	<div class="container_fluid" >
-		<div class="row" style="border: solid 1px grey;">
-			<div id="block1" class="col-xs-3 col-md-4 col-lg-4"><!-- Bloc de gauche du CV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+		<div class="row">
+			<div id="block1" class="col-xs-12 col-md-12 col-lg-4"><!-- Bloc de gauche du CV !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 				<header>
-					<img src="photo.jpg" alt="Ma photo" class="img-fluid rounded-circle img-responsive" style="width: 60%; margin-left: 20%; margin-top: 50px ; margin-bottom: 50px ; border: solid 4px rgb(218,175,18); ">
+					<img id="photo" src="photo.jpg" alt="Ma photo" class="img-fluid rounded-circle img-responsive">
+					<div id="titre-block-xs"> <!-- Bloc utliser dans le format PETIT écran uniquement pour afficher le nom, prénom et job -->
+						<h1 id="nom-xs"><span style="color: rgb(66,66,66);">FLORENT</span> NOEL</h1>
+						<h6 id="job-xs"><span class="underline">Dével</span>oppeur web</h6>
+					</div>
 					<h3>Contact</h3>
 					<p style="font-weight: bold;font-size: 13px;">
 					Adresse<br>
@@ -35,7 +39,7 @@
 					<p>Je suis étudiant en développement web et très passionné par ce domaine ainsi que par l'informatique.
 					J'ai également une passion pour l'univers geek et la culture japonnaise. J'ai pour projet de devenir développeur web et de relevé de nouveaux challenges pour appronfondir mon expérience et mes connaissances.</p>
 				</header>
-				<footer>
+				<footer id="footerLG">
 					<h3>Loisirs</h3>
 					<div id="loisirs">
 						<img alt="Jeux Vidéo" src="icon/joystick.png">
@@ -45,17 +49,18 @@
 				</footer>
 			</div>
 			
-			<div id="block2" class="col-xs-9 col-md-8 col-lg-8"> <!-- Bloc principal du CV (droite)!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+			<div id="block2" class="col-xs-12 col-md-12 col-lg-8"> <!-- Bloc principal du CV ------------------------------------------------------------------>
 				<main>
-					<h1 class="titre1"><span class="color_theme">FLORENT</span> NOEL</h1>
-					<h6 style="color: rgb(66,66,66); font-size: 35px;"><span class="underline">Dével</span>oppeur web</h6>
-					<h2 style="margin-top: 100px;"><i class="fas fa-graduation-cap color_theme"></i> Formation</h2>
+					<div id="titre-block-lg"> <!-- Bloc utliser dans le format grand écran pour afficher le nom, prénom et job -->
+						<h1 id="nom-lg"><span class="color_theme">FLORENT</span> NOEL</h1>
+						<h6 id="job-lg"><span class="underline">Dével</span>oppeur web</h6>
+					</div>
+					<h2><i class="fas fa-graduation-cap color_theme"></i> Formation</h2>
 					<article>
 						<section>
 								<div class="dates">
 									<i class="far fa-dot-circle color_theme "></i>
-										2019<br>
-										Boulogne-sur-mer
+										<strong>2019</strong> Boulogne-sur-mer
 								</div>
 								<div class="contenu_formation">
 									<h4>Niveau BTS (Non obtenu)</h4>
@@ -66,7 +71,7 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										2017<br>
+										<strong>2017</strong>
 										Boulogne-sur-mer
 								</div>
 								<div class="contenu_formation">
@@ -82,7 +87,7 @@
 						<section>
 								<div class="dates">
 									<i class="far fa-dot-circle color_theme "></i>
-										Septembre 2019<br>
+										<strong>Septembre 2019</strong>
 										Outreau
 								</div>
 								<div class="contenu_formation">
@@ -94,19 +99,19 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Aout 2019<br>
+										<strong>Aout 2019</strong>
 										Outreau
 								</div>
 								<div class="contenu_formation">
 									<h4>Gémo</h4>
 									<h5>Inventoriste</h5>
-									<p>Inventaire des articles en rayon Gémos</p>
+									<p>Inventaire des articles en rayon Gémo</p>
 								</div>
 						</section>
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Juin 2019<br>
+										<strong>Juin 2019</strong>
 										Outreau
 								</div>
 								<div class="contenu_formation">
@@ -118,7 +123,7 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Mai-Juin 2018<br>
+										<strong>Mai-Juin 2018</strong>
 										Boulogne-sur-mer
 								</div>
 								<div class="contenu_formation">
@@ -130,7 +135,7 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Janvier 2017<br>
+										<strong>Janvier 2017</strong>
 										Marquise
 								</div>
 								<div class="contenu_formation">
@@ -142,7 +147,7 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Octobre 2016<br>
+										<strong>Octobre 2016</strong>
 										Marquise
 								</div>
 								<div class="contenu_formation">
@@ -154,7 +159,7 @@
 						<section>
 								<div class="dates">
 									<i class="fas fa-circle color_theme"></i>
-										Décembre 2015<br>
+										<strong>Décembre 2015</strong>
 										Boulogne-sur-mer
 								</div>
 								<div class="contenu_formation">
@@ -166,7 +171,7 @@
 					</article>
 					<h2><i class="fas fa-pencil-alt color_theme"></i> Recommandations</h2>
 					<article>
-						<section><!--Bloc recommandations-->
+						<section id="section-recommandations"><!--Bloc recommandations-->
 							<div class="contenu_rec" style="margin-right: 25%;">
 									<h6>MAXIME KIEMAN</h6>
 									<p><strong>Directeur, Mon Agence</strong> <br>
@@ -185,6 +190,14 @@
 					</article>
 				</main>
 			</div>
+			<footer id="footerXS">
+					<h3>Loisirs</h3>
+					<div id="loisirs" class="container_fluid">
+						<img alt="Jeux Vidéo" src="icon/joystick.png">
+						<img alt="Informatique" src="icon/pc.png">
+						<img alt="Culture Japonnaise" src="icon/japan.png">
+					</div>	
+			</footer>
 		</div>
 	</div>
 </body>
