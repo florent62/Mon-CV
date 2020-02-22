@@ -1,8 +1,8 @@
-
-html
+.row /* Pour ne pas avoir de défilement horizontal*/
 {
-	border: solid 1px green;
-
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 .petit_point /*Petit point avant la date des expériences/formation ect*/
 {
@@ -113,7 +113,7 @@ article
 	margin-top: 5px;
 }
 
-#loisirs /* Div qui contient les icones loisirs*/
+.loisirs /* Div qui contient les icones loisirs*/
 {
 	display: flex;
 	justify-content: space-around;
@@ -121,7 +121,7 @@ article
 	margin-left: 40px;margin-right: 40px;
 	
 }
-#loisirs img /* Icones loisirs*/
+.loisirs img /* Icones loisirs*/
 {
 	width: 25%;
 }
