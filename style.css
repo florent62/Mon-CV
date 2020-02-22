@@ -4,6 +4,10 @@
 	padding: 0px;
 	margin: 0px;
 }
+body
+{
+	font-family: Roboto,BlinkMacSystemFont,"Segoe UI",-apple-system,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
 .petit_point /*Petit point avant la date des expériences/formation ect*/
 {
 	font-size: 10px;
@@ -20,6 +24,7 @@
 #titre-block-xs
 {
 	display: none;
+	margin-right: 15px;
 }
 #footerXS
 {
@@ -238,11 +243,9 @@ strong
 		background-color:rgb(255,193,7);
 		width: 100%;
 	}
-
-	#photo
+	header
 	{
-		margin-top: 20px; 
-		margin-bottom: 20px; 
+
 	}
 	main
 	{
