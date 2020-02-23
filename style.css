@@ -44,9 +44,10 @@ main /* tout le contenu de la partie droite sur font blanc*/
 {
 	padding: 10%;
 }
-h2
+h2 /* Titre des articles (Expérience pro, formation, recommandation)*/
 {
 	text-transform: uppercase;
+	border-bottom:solid 2px rgb(255,193,7);
 }
 h3 /* Titre du bandeau gauche */
 {
@@ -106,10 +107,6 @@ section /* Les sections continent les dates et contenu_formation*/
 	display: flex;
 	margin-top: 8px;
 	padding-top: 8px;
-}
-article /* Contient les parties comme "formation" et "expériences pro"*/
-{
-	border-top:solid 2px rgb(255,193,7);
 }
 .dates
 {
