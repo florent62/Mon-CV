@@ -139,8 +139,8 @@ section /* Les sections continent les dates et contenu_formation*/
 {
 	font-size: 10px;
 }
-/*Style pour les plus petit écran ----------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 768px) 
+/*Style pour les plus petit écran (mobile) ----------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 767px) 
 {
 	#footerLG/*Footer caché pour les petit écran */ 
 	{
@@ -172,7 +172,6 @@ section /* Les sections continent les dates et contenu_formation*/
 	{
 		padding: 0px;
 		padding-top: 15px;
-		border-top: solid 1px rgb(218,175,18);
 	}
 
 	h2
@@ -217,79 +216,35 @@ section /* Les sections continent les dates et contenu_formation*/
 		margin-left: 20%;
 	}
 }
-/*Style pour les écrans type tablette ----------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 991px) 
-{
-	#footerLG/*Footer pour écran petit écrans */ 
+/*Style pour les écrans type tablette -----------------------------------------------------------------------------------------------------------------------------*/
+	@media screen and (max-width: 991px) 
 	{
-		display: none;
+		#footerLG/*Footer pour écran petit écrans */ 
+		{
+			display: none;
+		}
+		#titre-block-lg
+		{
+			display: none;
+		}
+		#titre-block-xs
+		{
+			display: block;
+			margin-left: 25px;
+			text-align: right;
+		}
+		#footerXS/*Footer pour écran petit écrans */ 
+		{
+			display: block;
+			background-color:rgb(255,193,7);
+			width: 100%;
+		}
+		main
+		{
+			margin-left:0px;
+			margin-right:0px;
+			margin-top: 35px;
+			margin-bottom: 30px;
+			padding: 0px;
+		}
 	}
-	#titre-block-lg
-	{
-		display: none;
-	}
-	#titre-block-xs
-	{
-		display: block;
-		margin-left: 25px;
-		text-align: right;
-	}
-	#footerXS/*Footer pour écran petit écrans */ 
-	{
-		display: block;
-		background-color:rgb(255,193,7);
-		width: 100%;
-	}
-	header
-	{
-
-	}
-	main
-	{
-		padding: 0px;
-		padding-top: 15px;
-		border-top: solid 1px rgb(218,175,18);
-	}
-
-	h2
-	{
-		font-size: 20px;
-	}
-	h2 i /* Style des icone de fontawesome */
-	{
-		font-size: 20px;
-		margin-right: 5px;
-	}
-	h4
-	{
-		font-size: 18px;
-	}
-
-	h5
-	{
-		font-size: 15px;
-	}
-	section
-	{
-		display: flex;
-		flex-direction: column;
-		margin-top: 8px;
-		padding-top: 8px;
-	}
-
-	.dates
-	{
-		width: 90%;
-		margin-right: 0px;
-		margin-bottom: 8px;
-	}
-	.dates i
-	{
-		margin-right: 5px;
-		margin-top: 5px;
-	}
-	#section-recommandations
-	{
-		margin-left: 20%;
-	}
-}
