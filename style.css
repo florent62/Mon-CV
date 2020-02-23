@@ -12,14 +12,17 @@ body
 {
 	font-size: 10px;
 }
-
+#countainer_photo
+{
+	display: flex;
+   	justify-content: center; 
+   	margin-top: 30px;
+   	margin-bottom: 25px;
+}
 #photo
 {
-	 width: 60%; 
-	 margin-left: 19%; 
-	 margin-top: 50px; 
-	 margin-bottom: 50px; 
-	 border: solid 4px rgb(218,175,18);
+	width: 60%; 
+	border: solid 4px rgb(218,175,18);
 }
 #titre-block-xs /* div titre pour les écran plus petit*/
 {
