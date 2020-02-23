@@ -6,7 +6,7 @@
 }
 body
 {
-	font-family: Roboto,BlinkMacSystemFont,"Segoe UI",-apple-system,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
 }
 .petit_point /*Petit point avant la date des expériences/formation ect*/
 {
@@ -21,12 +21,12 @@ body
 	 margin-bottom: 50px; 
 	 border: solid 4px rgb(218,175,18);
 }
-#titre-block-xs
+#titre-block-xs /* div titre pour les écran plus petit*/
 {
 	display: none;
 	margin-right: 15px;
 }
-#footerXS
+#footerXS /* footer pour les écran plus petit*/
 {
 	display: none;
 }
@@ -40,7 +40,7 @@ h1, h2
 {
 	color: black;
 }
-main
+main /* tout le contenu de la partie droite sur font blanc*/
 {
 	padding: 10%;
 }
@@ -48,7 +48,7 @@ h2
 {
 	text-transform: uppercase;
 }
-h3
+h3 /* Titre du bandeau gauche */
 {
 	background-color: rgb(66,66,66);
 	color: rgb(255,193,7);
@@ -60,7 +60,11 @@ h6
 {
 	font-size: 20px;
 }
-.color_theme /* Couleur principale du CV*/
+strong
+{
+	font-weight: normal;
+}
+.color_theme /* Couleur dominante du CV du CV*/
 {
 	color: rgb(255,193,7);
 }
@@ -77,33 +81,33 @@ h6
 	margin-left: 10%;
 	margin-right: 10%;
 }
-.underline
+.underline /* Pour souligner du texte pour un effet visuel*/
 {
 	border-bottom: solid 2px rgb(255,193,7);
 }
-#titre-block-lg
+#titre-block-lg /* Div contenant le Prénom, nom et métier en version grand écran*/
 {
 	padding-bottom: 60px;
 }
 
-#nom-lg
+#nom-lg /* Nom et prénom de la version grand écran*/
 {
 	font-size: 55px;
 }
 
-#job-lg
+#job-lg /* titre du métiers en version grand écran*/
 {
 	color: rgb(66,66,66); 
 	font-size: 35px;
 }
 
-section
+section /* Les sections continent les dates et contenu_formation*/
 {
 	display: flex;
 	margin-top: 8px;
 	padding-top: 8px;
 }
-article
+article /* Contient les parties comme "formation" et "expériences pro"*/
 {
 	border-top:solid 2px rgb(255,193,7);
 }
@@ -112,7 +116,7 @@ article
 	width: 40%;
 	margin-right: 60px;
 }
-.dates i
+.dates i /* Icone fontawesome devant les titre des articles*/d
 {
 	margin-right: 15px;
 	margin-top: 5px;
@@ -130,30 +134,26 @@ article
 {
 	width: 25%;
 }
-.contenu_rec
+.contenu_rec /* Contenu de la partie recommandation*/
 {
 	margin-top: 20px;
 }
-.fa-circle
+.fa-circle /* Icone cercle simple avec fontawesome */
 {
 	font-size: 10px;
-}
-strong
-{
-	font-size: 
 }
 /*Style pour les plus petit écran ----------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) 
 {
-	#footerLG/*Footer pour écran petit écrans */ 
+	#footerLG/*Footer caché pour les petit écran */ 
 	{
 		display: none;
 	}
-	#titre-block-lg
+	#titre-block-lg  /*Titres caché pour les petit écran */ 
 	{
 		display: none;
 	}
-	#titre-block-xs
+	#titre-block-xs /*Titres visible pour les petit écran */ 
 	{
 		display: block;
 		margin-left: 25px;
@@ -166,7 +166,7 @@ strong
 		width: 100%;
 	}
 
-	#photo
+	#photo 
 	{
 		margin-top: 20px; 
 		margin-bottom: 20px; 
@@ -296,5 +296,3 @@ strong
 		margin-left: 20%;
 	}
 }
-
-/* Changer strong*/
