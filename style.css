@@ -251,3 +251,19 @@ section /* Les sections continent les dates et contenu_formation*/
 			padding: 0px;
 		}
 	}
+	/*Style pour les tout petit écran -----------------------------------------------------------------------------------------------------------------------------*/
+	@media screen and (max-width: 344px) 
+	{
+		h2
+		{
+			font-size: 18px;
+		}
+	}
+	/*Style pour les écrans 4K*/
+	@media screen and (min-width: 2560px)
+	{
+		main
+		{
+			padding: 50px
+		}
+	}
