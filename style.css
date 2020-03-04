@@ -79,6 +79,7 @@ strong
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 100%;
 }
 #block1 p /* Paragraphe dans le bandeau gauche*/
 {
