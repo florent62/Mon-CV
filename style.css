@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* Couleurs de la police et du fond des titre du bandeau gauche (en couleurs)*/
 .row {
-  /* Pour ne pas avoir de défilement horizontal*/
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -38,6 +37,13 @@ figure img {
   width: 60%;
   border: solid 4px #e6b000;
   /*Darken pour avoir une version assombri de la couleur de la variable them-color*/
+  transition: transform 150ms;
+}
+figure img:hover {
+  /* Au survol de la photo*/
+  cursor: pointer;
+  border: solid 4px #cc9d00;
+  transform: scale(1.1);
 }
 
 h2 {
@@ -97,10 +103,6 @@ strong {
   justify-content: space-between;
   width: 100%;
 }
-#block1 i {
-  color: #292929;
-  font-size: 50px;
-}
 #block1 p {
   /* Paragraphe dans le bandeau gauche*/
   margin-left: 10%;
@@ -112,6 +114,10 @@ strong {
   display: flex;
   justify-content: space-around;
   margin: 30px;
+}
+.loisirs i {
+  color: #292929;
+  font-size: 50px;
 }
 
 .underline {
