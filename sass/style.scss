@@ -1,0 +1,144 @@
+$theme-color: rgb(255, 196, 0);
+$color-secondary: rgb(41, 41, 41); /* Couleurs de la police et du fond des titre du bandeau gauche (en couleurs)*/
+
+.row {/* Pour ne pas avoir de défilement horizontal*/
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
+	color: $color-secondary;
+}
+
+main {/* tout le contenu de la partie droite sur font blanc*/
+	padding: 10%;
+}
+
+section {/* Les sections continent les dates et contenu_formation*/
+	display: flex;
+	margin-top: 8px;
+	padding-top: 8px;
+	.dates{
+		width: 40%;
+		margin-right: 60px;
+	}
+}
+
+figure{
+	display: flex;
+   	justify-content: center; 
+   	margin-top: 30px;
+	margin-bottom: 25px;
+	img{
+		width: 60%; 
+		border: solid 4px darken($theme-color, 5%); /*Darken pour avoir une version assombri de la couleur de la variable them-color*/
+	}   
+}
+h2 {/* Titre des articles (Expérience pro, formation, recommandation)*/
+	text-transform: uppercase;
+	border-bottom:solid 2px $theme-color;
+	i{ 		/* Style des icone de fontawesome */
+		font-size: 30px;
+		margin-right: 15px;
+		margin-top: 5px;
+	}
+}
+
+h3 {/* Titre du bandeau gauche */
+	background-color: $color-secondary;
+	color: $theme-color;
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+h6{
+	font-size: 20px;
+}
+
+i{
+	color: $theme-color;
+}
+
+#Prenom{
+	color: $theme-color;
+}
+strong{
+	font-weight: normal;
+}
+
+#titre-block-xs {/* RESPONSIVE div titre pour les écran plus petit*/
+	display: none;
+	margin-right: 15px;
+}
+#footerXS {/* RESPONSIVE footer pour les écran plus petit*/
+	display: none;
+}
+
+#block1 {/* Structure du bandeau gauche*/
+	background-color: $theme-color;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	i{
+		color: $color-secondary;
+		font-size: 50px;
+	}
+	p{/* Paragraphe dans le bandeau gauche*/
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+.loisirs {/* Div qui contient les icones loisirs*/
+	display: flex;
+	justify-content: space-around;
+	margin: 30px;
+}
+.underline {/* Pour souligner du texte pour un effet visuel*/
+	border-bottom: solid 2px $theme-color;
+}
+#titre-block-lg {/*RESPONSIVE Div contenant le Prénom, nom et métier en version grand écran*/
+	padding-bottom: 60px;
+}
+
+#nom-lg{ /*RESPONSIVE Nom et prénom de la version grand écran*/
+	font-size: 55px;
+}
+
+#job-lg {/* RESPONSIVE titre du métiers en version grand écran*/
+	font-size: 35px;
+}
+
+.contenu_rec {	/* Contenu de la partie recommandation*/
+	margin-top: 20px;
+	margin-right: 25%;
+}
+
+.fa-circle {/* Icone cercle simple avec fontawesome */
+	font-size: 10px;
+}
+
+/*Style pour les plus petit écran (mobile) ----------------------------------------------------------------------------------------------------------*/
+	@media screen and (max-width: 767px) {
+		@import "libs/style_mobile.scss";
+	}
+/*Style pour les écrans type tablette -----------------------------------------------------------------------------------------------------------------------------*/
+	@media screen and (max-width: 991px) {
+		@import "libs/style_tablet.scss";
+	}
+	/*Style pour les tout petit écran -----------------------------------------------------------------------------------------------------------------------------*/
+	@media screen and (max-width: 344px) 
+	{
+		h2{
+			font-size: 18px;
+		}
+	}
+	/*Style pour les écrans 4K*/
+	@media screen and (min-width: 2560px){
+		main{
+			padding: 50px
+		}
+	}

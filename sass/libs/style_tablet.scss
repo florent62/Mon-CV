@@ -1,0 +1,28 @@
+#footerLG/*Footer pour écran petit écrans */ 
+		{
+			display: none;
+		}
+		#titre-block-lg
+		{
+			display: none;
+		}
+		#titre-block-xs
+		{
+			display: block;
+			margin-left: 25px;
+			text-align: right;
+		}
+		#footerXS/*Footer pour écran petit écrans */ 
+		{
+			display: block;
+			background-color:$theme-color;
+			width: 100%;
+		}
+		main
+		{
+			margin-left:0px;
+			margin-right:0px;
+			margin-top: 35px;
+			margin-bottom: 30px;
+			padding: 0px;
+		}

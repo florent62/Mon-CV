@@ -1,0 +1,73 @@
+#footerLG/*Footer caché pour les petit écran */ 
+	{
+		display: none;
+	}
+	#titre-block-lg  /*Titres caché pour les petit écran */ 
+	{
+		display: none;
+	}
+	#titre-block-xs /*Titres visible pour les petit écran */ 
+	{
+		display: block;
+		margin-left: 25px;
+		text-align: right;
+	}
+	#footerXS/*Footer pour écran petit écrans */ 
+	{
+		display: block;
+		background-color:$theme-color;
+		width: 100%;
+	}
+
+	#photo 
+	{
+		margin-top: 20px; 
+		margin-bottom: 20px; 
+	}
+	main
+	{
+		padding: 0px;
+		padding-top: 15px;
+	}
+
+	h2
+	{
+		font-size: 20px;
+	}
+	h2 i /* Style des icone de fontawesome */
+	{
+		font-size: 20px;
+		margin-right: 5px;
+	}
+	h4
+	{
+		font-size: 18px;
+	}
+
+	h5
+	{
+		font-size: 15px;
+	}
+	section
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 8px;
+		padding-top: 8px;
+	}
+
+	.dates
+	{
+		width: 90%;
+		margin-right: 0px;
+		margin-bottom: 8px;
+	}
+	.dates i
+	{
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+	#section-recommandations
+	{
+		margin-left: 20%;
+	}

@@ -1,270 +1,262 @@
-.row /* Pour ne pas avoir de défilement horizontal*/
-{
-	width: 100%;
-	padding: 0px;
-	margin: 0px;
-}
-body
-{
-	font-family: Roboto,"Segoe UI","Helvetica Neue",Arial,sans-serif,"Segoe UI Emoji","Segoe UI Symbol";
-}
-.petit_point /*Petit point avant la date des expériences/formation ect*/
-{
-	font-size: 10px;
-}
-#countainer_photo
-{
-	display: flex;
-   	justify-content: center; 
-   	margin-top: 30px;
-   	margin-bottom: 25px;
-}
-#photo
-{
-	width: 60%; 
-	border: solid 4px rgb(218,175,18);
-}
-#titre-block-xs /* div titre pour les écran plus petit*/
-{
-	display: none;
-	margin-right: 15px;
-}
-#footerXS /* footer pour les écran plus petit*/
-{
-	display: none;
+@charset "UTF-8";
+/* Couleurs de la police et du fond des titre du bandeau gauche (en couleurs)*/
+.row {
+  /* Pour ne pas avoir de défilement horizontal*/
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
-h2 i /* Style des icone de fontawesome */
-{
-	font-size: 30px;
-	margin-right: 25px;
-}
-h1, h2
-{
-	color: black;
-}
-main /* tout le contenu de la partie droite sur font blanc*/
-{
-	padding: 10%;
-}
-h2 /* Titre des articles (Expérience pro, formation, recommandation)*/
-{
-	text-transform: uppercase;
-	border-bottom:solid 2px rgb(255,193,7);
-}
-h3 /* Titre du bandeau gauche */
-{
-	background-color: rgb(66,66,66);
-	color: rgb(255,193,7);
-	text-align: center;
-	margin-bottom: 30px;
-	text-transform: uppercase;
-}
-h6
-{
-	font-size: 20px;
-}
-strong
-{
-	font-weight: normal;
-}
-.color_theme /* Couleur dominante du CV du CV*/
-{
-	color: rgb(255,193,7);
-}
-#block1 /* Structure du bandeau gauche*/
-{
-	background-color: rgb(255,193,7);
-	padding: 0px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-}
-#block1 p /* Paragraphe dans le bandeau gauche*/
-{
-	margin-left: 10%;
-	margin-right: 10%;
-}
-.underline /* Pour souligner du texte pour un effet visuel*/
-{
-	border-bottom: solid 2px rgb(255,193,7);
-}
-#titre-block-lg /* Div contenant le Prénom, nom et métier en version grand écran*/
-{
-	padding-bottom: 60px;
+body {
+  font-family: Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #292929;
 }
 
-#nom-lg /* Nom et prénom de la version grand écran*/
-{
-	font-size: 55px;
+main {
+  /* tout le contenu de la partie droite sur font blanc*/
+  padding: 10%;
 }
 
-#job-lg /* titre du métiers en version grand écran*/
-{
-	color: rgb(66,66,66); 
-	font-size: 35px;
+section {
+  /* Les sections continent les dates et contenu_formation*/
+  display: flex;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+section .dates {
+  width: 40%;
+  margin-right: 60px;
 }
 
-section /* Les sections continent les dates et contenu_formation*/
-{
-	display: flex;
-	margin-top: 8px;
-	padding-top: 8px;
+figure {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 25px;
 }
-.dates
-{
-	width: 40%;
-	margin-right: 60px;
-}
-.dates i /* Icone fontawesome devant les titre des articles*/d
-{
-	margin-right: 15px;
-	margin-top: 5px;
+figure img {
+  width: 60%;
+  border: solid 4px #e6b000;
+  /*Darken pour avoir une version assombri de la couleur de la variable them-color*/
 }
 
-.loisirs /* Div qui contient les icones loisirs*/
-{
-	display: flex;
-	justify-content: space-around;
-	margin-bottom: 30px; margin-top: 30px;
-	margin-left: 40px;margin-right: 40px;
-	
+h2 {
+  /* Titre des articles (Expérience pro, formation, recommandation)*/
+  text-transform: uppercase;
+  border-bottom: solid 2px #ffc400;
 }
-.loisirs img /* Icones loisirs*/
-{
-	width: 25%;
+h2 i {
+  /* Style des icone de fontawesome */
+  font-size: 30px;
+  margin-right: 15px;
+  margin-top: 5px;
 }
-.contenu_rec /* Contenu de la partie recommandation*/
-{
-	margin-top: 20px;
+
+h3 {
+  /* Titre du bandeau gauche */
+  background-color: #292929;
+  color: #ffc400;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
-.fa-circle /* Icone cercle simple avec fontawesome */
-{
-	font-size: 10px;
+
+h6 {
+  font-size: 20px;
 }
+
+i {
+  color: #ffc400;
+}
+
+#Prenom {
+  color: #ffc400;
+}
+
+strong {
+  font-weight: normal;
+}
+
+#titre-block-xs {
+  /* RESPONSIVE div titre pour les écran plus petit*/
+  display: none;
+  margin-right: 15px;
+}
+
+#footerXS {
+  /* RESPONSIVE footer pour les écran plus petit*/
+  display: none;
+}
+
+#block1 {
+  /* Structure du bandeau gauche*/
+  background-color: #ffc400;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+#block1 i {
+  color: #292929;
+  font-size: 50px;
+}
+#block1 p {
+  /* Paragraphe dans le bandeau gauche*/
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.loisirs {
+  /* Div qui contient les icones loisirs*/
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.underline {
+  /* Pour souligner du texte pour un effet visuel*/
+  border-bottom: solid 2px #ffc400;
+}
+
+#titre-block-lg {
+  /*RESPONSIVE Div contenant le Prénom, nom et métier en version grand écran*/
+  padding-bottom: 60px;
+}
+
+#nom-lg {
+  /*RESPONSIVE Nom et prénom de la version grand écran*/
+  font-size: 55px;
+}
+
+#job-lg {
+  /* RESPONSIVE titre du métiers en version grand écran*/
+  font-size: 35px;
+}
+
+.contenu_rec {
+  /* Contenu de la partie recommandation*/
+  margin-top: 20px;
+  margin-right: 25%;
+}
+
+.fa-circle {
+  /* Icone cercle simple avec fontawesome */
+  font-size: 10px;
+}
+
 /*Style pour les plus petit écran (mobile) ----------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width: 767px) 
-{
-	#footerLG/*Footer caché pour les petit écran */ 
-	{
-		display: none;
-	}
-	#titre-block-lg  /*Titres caché pour les petit écran */ 
-	{
-		display: none;
-	}
-	#titre-block-xs /*Titres visible pour les petit écran */ 
-	{
-		display: block;
-		margin-left: 25px;
-		text-align: right;
-	}
-	#footerXS/*Footer pour écran petit écrans */ 
-	{
-		display: block;
-		background-color:rgb(255,193,7);
-		width: 100%;
-	}
+@media screen and (max-width: 767px) {
+  #footerLG {
+    display: none;
+  }
 
-	#photo 
-	{
-		margin-top: 20px; 
-		margin-bottom: 20px; 
-	}
-	main
-	{
-		padding: 0px;
-		padding-top: 15px;
-	}
+  #titre-block-lg {
+    display: none;
+  }
 
-	h2
-	{
-		font-size: 20px;
-	}
-	h2 i /* Style des icone de fontawesome */
-	{
-		font-size: 20px;
-		margin-right: 5px;
-	}
-	h4
-	{
-		font-size: 18px;
-	}
+  #titre-block-xs {
+    display: block;
+    margin-left: 25px;
+    text-align: right;
+  }
 
-	h5
-	{
-		font-size: 15px;
-	}
-	section
-	{
-		display: flex;
-		flex-direction: column;
-		margin-top: 8px;
-		padding-top: 8px;
-	}
+  #footerXS {
+    display: block;
+    background-color: #ffc400;
+    width: 100%;
+  }
 
-	.dates
-	{
-		width: 90%;
-		margin-right: 0px;
-		margin-bottom: 8px;
-	}
-	.dates i
-	{
-		margin-right: 5px;
-		margin-top: 5px;
-	}
-	#section-recommandations
-	{
-		margin-left: 20%;
-	}
+  #photo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding: 0px;
+    padding-top: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h2 i {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 15px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+
+  .dates {
+    width: 90%;
+    margin-right: 0px;
+    margin-bottom: 8px;
+  }
+
+  .dates i {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  #section-recommandations {
+    margin-left: 20%;
+  }
 }
 /*Style pour les écrans type tablette -----------------------------------------------------------------------------------------------------------------------------*/
-	@media screen and (max-width: 991px) 
-	{
-		#footerLG/*Footer pour écran petit écrans */ 
-		{
-			display: none;
-		}
-		#titre-block-lg
-		{
-			display: none;
-		}
-		#titre-block-xs
-		{
-			display: block;
-			margin-left: 25px;
-			text-align: right;
-		}
-		#footerXS/*Footer pour écran petit écrans */ 
-		{
-			display: block;
-			background-color:rgb(255,193,7);
-			width: 100%;
-		}
-		main
-		{
-			margin-left:0px;
-			margin-right:0px;
-			margin-top: 35px;
-			margin-bottom: 30px;
-			padding: 0px;
-		}
-	}
-	/*Style pour les tout petit écran -----------------------------------------------------------------------------------------------------------------------------*/
-	@media screen and (max-width: 344px) 
-	{
-		h2
-		{
-			font-size: 18px;
-		}
-	}
-	/*Style pour les écrans 4K*/
-	@media screen and (min-width: 2560px)
-	{
-		main
-		{
-			padding: 50px
-		}
-	}
+@media screen and (max-width: 991px) {
+  #footerLG {
+    display: none;
+  }
+
+  #titre-block-lg {
+    display: none;
+  }
+
+  #titre-block-xs {
+    display: block;
+    margin-left: 25px;
+    text-align: right;
+  }
+
+  #footerXS {
+    display: block;
+    background-color: #ffc400;
+    width: 100%;
+  }
+
+  main {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
+}
+/*Style pour les tout petit écran -----------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 344px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+/*Style pour les écrans 4K*/
+@media screen and (min-width: 2560px) {
+  main {
+    padding: 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

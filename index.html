@@ -12,7 +12,7 @@
 	<script src="https://kit.fontawesome.com/c07d48b88e.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><!-- Appel de la police roboto-->
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<title>CV - Florent NOEL</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
 		<div class="row"><!-- bootstrap-->
 			<div id="block1" class="col-xs-12 col-md-12 col-lg-4"><!-- Bloc de gauche du CV !! -->
 				<header>
-					<div id="countainer_photo"><img id="photo" src="photo.jpg" alt="Ma photo" class="img-fluid rounded-circle img-responsive"></div>
+					<figure><img id="photo" src="photo.jpg" alt="Ma photo" class="img-fluid rounded-circle img-responsive"></figure>
 					<div id="titre-block-xs"> <!-- Bloc utliser dans le format PETIT écran uniquement pour afficher le nom, prénom et job -->
 						<h1 id="nom-xs"><strong><span style="color: rgb(66,66,66);">FLORENT</span> NOEL</strong></h1>
 						<h6 id="job-xs"><strong><span class="underline">Dével</span>oppeur web</strong></h6>
@@ -48,9 +48,9 @@
 				<footer id="footerLG">
 					<h3>Loisirs</h3>
 					<div class="loisirs">
-						<img alt="Jeux Vidéo" src="icon/joystick.png">
-						<img alt="Informatique" src="icon/pc.png">
-						<img alt="Culture Japonnaise" src="icon/japan.png">
+						<i class="fas fa-gamepad"></i>
+						<i class="fab fa-internet-explorer"></i>
+						<i class="fas fa-gamepad"></i>
 					</div>	
 				</footer>
 			</div>
@@ -58,14 +58,14 @@
 			<div id="block2" class="col-xs-12 col-md-12 col-lg-8"> <!-- Bloc principal du CV -->
 				<main>
 					<div id="titre-block-lg"> <!-- Bloc utliser dans le format grand écran pour afficher le nom, prénom et job -->
-						<h1 id="nom-lg"><strong><span class="color_theme">FLORENT</span> NOEL</strong></h1>
+						<h1 id="nom-lg"><strong><span id="Prenom">FLORENT</span> NOEL</strong></h1>
 						<h6 id="job-lg"><strong><span class="underline">Dével</span>oppeur web</strong></h6>
 					</div>
 					<article>
-						<h2><i class="fas fa-graduation-cap color_theme"></i> Formation</h2>
+						<h2><i class="fas fa-graduation-cap"></i> Formation</h2>
 						<section>
 								<div class="dates">
-									<i class="far fa-dot-circle color_theme "></i>
+									<i class="far fa-dot-circle"></i>
 										<b>2019</b> Boulogne-sur-mer
 								</div>
 								<div class="contenu_formation">
@@ -76,7 +76,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle"></i>
 										<b>2017</b>
 										Boulogne-sur-mer
 								</div>
@@ -88,10 +88,10 @@
 						</section>
 					</article>
 					<article>
-						<h2><i class="fas fa-briefcase color_theme"></i> Expérience professionelle</h2>
+						<h2><i class="fas fa-briefcase"></i> Expérience professionelle</h2>
 						<section>
 								<div class="dates">
-									<i class="far fa-dot-circle color_theme "></i>
+									<i class="far fa-dot-circle"></i>
 										<b>Septembre 2019</b>
 										Outreau
 								</div>
@@ -103,7 +103,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle"></i>
 										<b>Aout 2019</b>
 										Outreau
 								</div>
@@ -115,7 +115,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle"></i>
 										<b>Juin 2019</b>
 										Outreau
 								</div>
@@ -127,7 +127,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle"></i>
 										<b>Mai-Juin 2018</b>
 										Boulogne-sur-mer
 								</div>
@@ -139,7 +139,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle "></i>
 										<b>Janvier 2017</b>
 										Marquise
 								</div>
@@ -151,7 +151,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle"></i>
 										<b>Octobre 2016</b>
 										Marquise
 								</div>
@@ -163,7 +163,7 @@
 						</section>
 						<section>
 								<div class="dates">
-									<i class="fas fa-circle color_theme"></i>
+									<i class="fas fa-circle "></i>
 										<b>Décembre 2015</b>
 										Boulogne-sur-mer
 								</div>
@@ -175,9 +175,9 @@
 						</section>
 					</article>
 					<article>
-						<h2><i class="fas fa-pencil-alt color_theme"></i> Recommandations</h2>
+						<h2><i class="fas fa-pencil-alt"></i> Recommandations</h2>
 						<section id="section-recommandations"><!--Bloc recommandations-->
-							<div class="contenu_rec" style="margin-right: 25%;">
+							<div class="contenu_rec">
 									<h6>MAXIME KIEMAN</h6>
 									<p><b>Directeur, Mon Agence</b> <br>
 										<b>Téléphone: </b><br>
